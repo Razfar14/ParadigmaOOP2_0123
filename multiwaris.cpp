@@ -23,4 +23,13 @@ public:    pelajar(int umur) : orang(umur) {
     }
 };
 
+class budi : public perkerja, public pelajar{
+public:
+    budi(int umur) : 
+    orang(umur), 
+    perkerja(umur), 
+    pelajar(umur) {
+        cout << "Objek budi dibuat\n" << endl;
+    }
+};
 
